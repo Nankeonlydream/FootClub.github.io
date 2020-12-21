@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>美食俱乐部 || 一个有意思的吃货根据地</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<meta name="keywords" content="这里是美食俱乐部美食！" />
+<script type="application/x-javascript"> 
+	addEventListener("load", function() { 
+		setTimeout(hideURLbar, 0); 
+	}, false); 
+	function hideURLbar(){ 
+		window.scrollTo(0,1);
+	} 
+</script>
+<!-- 引入bootstrap-css -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<!-- 引入css样式 -->
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+<!-- 引入字体样式 -->
+<link href="css/font-awesome.css" rel="stylesheet"> 
+<link rel="shortcut icon" href="./images/food.png">
+<!-- 引入Jquery -->
+<script src="js/jquery-1.11.1.min.js"></script>
+<!-- 引入bootstarp -->
+<script src="js/bootstrap.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000); //滚动条相对于其顶部的偏移
+		});
+	});
+</script> 
+
+</head>
+<body>
+	<!-- 中间导航 -->
+	<div class="banner jarallax">
+		<div class="agileinfo-dot">
+			<div class="w3layouts-header-top">
+				<div class="w3-header-top-grids">
+					<div class="w3-header-top-left">
+						<p><i class="fa fa-volume-control-phone" aria-hidden="true"></i></p>
+					</div>
+					<div class="w3-header-top-right">
+						<div class="agileinfo-social-grids"></div>
+						<div class="w3-header-top-right-text">
+							<p><i class="fa fa-home" aria-hidden="true"></i>食吧</p>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+			<div class="head">
+				<div class="head-nav-grids">
+					<div class="navbar-top">
+							<!-- 品牌切换进行分组以更好地显示在页面上 -->
+							<div class="navbar-header">
+							  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+								<span class="sr-only">食吧</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							  </button>
+								 <div class="navbar-brand logo ">
+									<h1><a href="index.html">Food <span>Club</span></a></h1>
+								</div>
+							</div>
+
+							<!-- 收集导航链接，表单和其他内容以进行切换 -->
+							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+							 <ul class="nav navbar-nav link-effect-4">
+							<li ><a href="index.html" data-hover="Home">主页</a> </li>	
+							<li class="active"><a href="about.html"  data-hover="About">分享</a></li>
+								<li><a href="gallery.html"  data-hover="Gallery">好吃的</a></li>
+								<li><a href="contact.html" data-hover="Contact">联系我们</a></li>
+							  </ul>
+							</div>
+						</div>
+			
+					<div class="header-left">
+					
+					</div>
+					<div class="clearfix"></div>	
+				</div>
+			</div>
+			<div class="w3layouts-banner-slider">
+				<div class="w3layouts-banner-top-slider">
+					<div class="slider">
+						<div class="callbacks_container">
+							<ul class="rslides callbacks callbacks1" id="slider4">
+								<li>
+									<div class="agileits-banner-info">
+										<h3>滋味好的食物<span>都应该分享</span></h3>
+										<div class="w3-button">
+									
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="agileits-banner-info">
+										<h3>垂涎闪舌兮<span>挥霍旁午</span></h3>
+										<div class="w3-button">
+											
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="clearfix"> </div>
+						<script src="js/responsiveslides.min.js"></script>
+						<script>
+							$(function () {
+							  // 添加Jquery中幻灯片播放组件
+							  $("#slider4").responsiveSlides({
+								auto: true,
+								pager:true,
+								nav:true,
+								speed: 500,
+								namespace: "callbacks",
+							  });
+						
+							});
+						 </script>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 事件组 -->
+	<div class="events">
+		<div class="container">
+			<div class="agileinfo-heading">
+				<h3>你的故事我来听</h3>
+			</div>
+			<div class="w3l-event-grids">
+				<div class="col-md-6 w3l-event-grid">
+					<div class="w3l-event-img">
+						<a href="single.html"><img src="images/2.jpg" alt="" /></a>
+					</div>
+					<div class="news-grid-info">
+						<a href="single.html">一次愉快的家庭聚餐</a>
+						<h5>九月 二十四日 | 10:00 - 12:00</h5>
+						<p>乐山烧烤。主要特色：一是码味腌制后上火生烤，同时渡油、各色调料，烟火味充足。二是熟烤，码味腌制后过一次油，先油炸片刻使食物保持酥脆鲜美，再放到大火上二次加工。五花肉与烤茄子是我的必点菜。</p>
+					</div>
+				</div>
+				<div class="col-md-6 w3l-event-grid">
+					<div class="w3l-event-img">
+						<a href="#"><img src="images/12.jpg" alt="" /></a>
+					</div>
+					<div class="news-grid-info">
+						<a href="#">记一次游街海吃</a>
+						<h5>八月 十二日 | 04:00 - 08:00</h5>
+						<p>马家巷冷沾沾。如果你在绵阳的街头，看见一家装修毫不起眼的小店里，挤了一堆人，他们在一起边吃边聊，那大多是在吃"冷沾沾"。把成串的熟后变凉的食材蘸上特制调料后，即可食用的特色小吃。</p>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	<!-- footer -->
+	<!-- Jarallax.js是一款用于制作网页背景视觉差效果的jQuery插件。Jarallax.js视觉差插件可以控制不同的元素的动画速度，从而形成视觉差效果。并且该视觉差特效还带有动画进度条，效果非常酷。  -->
+	<script src="js/jarallax.js"></script>
+	<script src="js/SmoothScroll.min.js"></script>
+	<script type="text/javascript">
+		/* 设置Jarallax属性 */
+		$('.jarallax').jarallax({
+			speed: 0.5,
+			imgWidth: 1366,
+			imgHeight: 768
+		})
+	</script>
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			// 返回顶部按钮
+			$().UItoTop({ easingType: 'easeOutQuart' });
+			});
+	</script>
+</body>	
+</html>

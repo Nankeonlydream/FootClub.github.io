@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>美食俱乐部 || 一个有意思的吃货根据地</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<meta name="keywords" content="这里是美食俱乐部美食！" />
+<script type="application/x-javascript"> 
+	addEventListener("load", function() { 
+		setTimeout(hideURLbar, 0); 
+	}, false); 
+	function hideURLbar(){ 
+		window.scrollTo(0,1);
+	} 
+</script>
+<!-- 引入bootstrap-css -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<!-- 引入css样式 -->
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+<!-- 引入字体样式 -->
+<link href="css/font-awesome.css" rel="stylesheet"> 
+<link rel="shortcut icon" href="./images/food.png">
+<!-- 引入Jquery -->
+<script src="js/jquery-1.11.1.min.js"></script>
+<!-- 引入bootstarp -->
+<script src="js/bootstrap.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000); //滚动条相对于其顶部的偏移
+		});
+	});
+</script> 
+
+
+</head>
+<body>
+	<!-- banner -->
+	<div class="banner jarallax">
+		<div class="agileinfo-dot">
+			<div class="w3layouts-header-top">
+				<div class="w3-header-top-grids">
+					<div class="w3-header-top-left">
+						<p><i class="fa fa-volume-control-phone" aria-hidden="true"></i></p>
+					</div>
+					<div class="w3-header-top-right">
+						<div class="agileinfo-social-grids">
+							
+						</div>
+						<div class="w3-header-top-right-text">
+							<p><i class="fa fa-home" aria-hidden="true"></i>食吧</p>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+			<div class="head">
+				<div class="head-nav-grids">
+					<div class="navbar-top">
+							<div class="navbar-header">
+							  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+								<span class="sr-only">食吧</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							  </button>
+								 <div class="navbar-brand logo ">
+									<h1><a href="index.html">Food <span>Club</span></a></h1>
+								</div>
+
+							</div>
+
+							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+							 <ul class="nav navbar-nav link-effect-4">
+							<li class="active"><a href="index.html" data-hover="Home">主页</a> </li>	
+							<li><a href="about.html"  data-hover="About">分享</a></li>
+								<li><a href="gallery.html"  data-hover="Gallery">好吃的</a></li>
+								<li><a href="contact.html" data-hover="Contact">联系我们</a></li>
+							  </ul>
+							</div>
+						</div>
+			
+					<div class="header-left">
+					
+					</div>
+					<div class="clearfix"></div>	
+				</div>
+			</div>
+			<div class="w3layouts-banner-slider">
+				<div class="w3layouts-banner-top-slider">
+					<div class="slider">
+						<div class="callbacks_container">
+							<ul class="rslides callbacks callbacks1" id="slider4">
+								<li>
+									<div class="agileits-banner-info">
+										<h3>所有好吃的东西<span>尽收眼底</span></h3>
+										<div class="w3-button">
+											
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="agileits-banner-info">
+										<h3>识食物者<span>为俊杰</span></h3>
+										<div class="w3-button">
+									
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="clearfix"> </div>
+						<script src="js/responsiveslides.min.js"></script>
+						<script>
+							$(function () {
+							  $("#slider4").responsiveSlides({
+								auto: true,
+								pager:true,
+								nav:true,
+								speed: 500,
+								namespace: "callbacks",
+								before: function () {
+								  $('.events').append("<li>before event fired.</li>");
+								},
+								after: function () {
+								  $('.events').append("<li>after event fired.</li>");
+								}
+							  });
+						
+							});
+						 </script>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="special">
+		<div class="container">
+			<div class="agileinfo-heading">
+				<h3>美食也是一道风景</h3>
+			</div>
+			<div class="special-top-grids">
+				<div class="w3-agile-special">
+					<div class="col-md-3 special-grids">
+						<div class="special-img">
+							<img class="img-responsive" src="images/s1.jpg" alt="">
+							<div class="captn">
+								<div class="captn-top">
+									<p>😊解腻小天使😊</p>
+								</div>
+								<div class="wthree-special-info">
+									<h4>焦糖豆花 ￥10</h4>
+								</div>
+							</div>
+						</div>
+					</div>					
+					<div class="col-md-3 special-grids">
+						<div class="special-img">
+							<img class="img-responsive" src="images/s2.jpg" alt="">
+							<div class="captn">
+								<div class="captn-top">
+									<p>🥰流连忘返🥰</p>
+								</div>
+								<div class="wthree-special-info">
+									<h4>樱花卷 ￥18</h4>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 special-grids">
+						<div class="special-img">
+							<img class="img-responsive" src="images/s3.jpg" alt="">
+							<div class="captn">
+								<div class="captn-top">
+									<p>😆口味超赞、还会来光顾😆</p>
+								</div>
+								<div class="wthree-special-info">
+									<h4>意式番茄鸡肉面 ￥13</h4>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 special-grids">
+						<div class="special-img">
+							<img class="img-responsive" src="images/s4.jpg" alt="">
+							<div class="captn">
+								<div class="captn-top">
+									<p>😛让人口水直流了😛</p>
+								</div>
+								<div class="wthree-special-info">
+									<h4>甜城牌王记牛肉干 ￥20</h4>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="w3-agile-special">
+					<div class="col-md-3 special-grids">
+						<div class="special-img">
+							<img class="img-responsive" src="images/s5.jpg" alt="">
+							<div class="captn">
+								<div class="captn-top">
+									<p>🤭地道的川味美食🤭</p>
+								</div>
+								<div class="wthree-special-info">
+									<h4>红味坊 ￥15</h4>
+								</div>
+							</div>
+						</div>
+					</div>					
+					<div class="col-md-3 special-grids">
+						<div class="special-img">
+							<img class="img-responsive" src="images/s6.jpg" alt="">
+							<div class="captn">
+								<div class="captn-top">
+									<p>😸改变你对手工巧克力的看法😸</p>
+								</div>
+								<div class="wthree-special-info">
+									<h4>楽雅君LeYaJun ￥25</h4>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 special-grids">
+						<div class="special-img">
+							<img class="img-responsive" src="images/s7.jpg" alt="">
+							<div class="captn">
+								<div class="captn-top">
+									<p>😁爽滑可口，根本停不下来😁</p>
+								</div>
+								<div class="wthree-special-info">
+									<h4>沈师傅旗舰店 ￥18</h4>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 special-grids">
+						<div class="special-img">
+							<img class="img-responsive" src="images/s8.jpg" alt="">
+							<div class="captn">
+								<div class="captn-top">
+									<p>🤪虽然有点贵，但是和普通的味道就是不一样的🤪</p>
+								</div>
+								<div class="wthree-special-info">
+									<h4>樱桃爷爷海外旗舰店 ￥32</h4>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/jarallax.js"></script>
+	<script src="js/SmoothScroll.min.js"></script>
+	<script type="text/javascript">
+		$('.jarallax').jarallax({
+			speed: 0.5,
+			imgWidth: 1366,
+			imgHeight: 768
+		})
+	</script>
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$().UItoTop({ easingType: 'easeOutQuart' });
+								
+			});
+	</script>
+</body>	
+</html>
